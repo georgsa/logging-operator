@@ -495,6 +495,11 @@ Specify an optional parser for the first line of the docker multiline mode.
 
 Set one or multiple shell patterns separated by commas to exclude files matching a certain criteria, e.g: exclude_path=*.gz,*.zip 
 
+### File_Cache_Advise (*bool, optional) {#inputtail-file_cache_advise}
+
+Use posix_fadvise for file access. Advise not to use kernel file cache.
+
+Default: true
 
 ### Ignore_Older (string, optional) {#inputtail-ignore_older}
 
