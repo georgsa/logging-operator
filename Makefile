@@ -38,7 +38,7 @@ OS := $(shell go env GOOS)
 ARCH := $(shell go env GOARCH)
 
 DOCKER ?= docker
-GOVERSION := $(shell go env GOVERSION)
+GOVERSION := $(shell go env GOVERSION | tr ' :' '_-')
 
 # Image name to use for building/pushing image targets
 FLUENTD_IMG ?= fluentd-full:local
